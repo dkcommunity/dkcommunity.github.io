@@ -4,34 +4,33 @@
 <meta charset="utf-8">
 <title>Untitled Page</title>
 <meta name="generator" content="WYSIWYG Web Builder 16 - https://www.wysiwygwebbuilder.com">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="Untitled1.css" rel="stylesheet">
+<link href="Untitled2.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
-<script src="wb.lazyload.min.js"></script>
+<script src="jquery-ui.min.js"></script>
 <script>
 $(document).ready(function()
 {
-   $('img[data-src]').lazyload();
+   $("a[href*='#intro']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#intro').offset().top }, 600, 'easeOutQuad');
+   });
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   // move arrow outside the layer container
+   $('#wb_down-arrow').appendTo('#intro');
 });
 </script>
 </head>
 <body>
-<div id="wb_VideoBackground">
-<div id="VideoBackground-overlay"></div>
-<div id="VideoBackground">
-<div class="row">
-<div class="col-1">
-<div id="wb_Palms" style="display:inline-block;width:100%;height:auto;z-index:0;">
-<img src="images/placeholder.gif" data-src="images/004.jpg" data-src-retina="images/13498884_gothic-frame-border-vector-gothic-transparent-png.png" id="Palms" alt="">
-</div>
-</div>
-<div class="col-2">
-<div id="wb_Text1">
-<span style="color:#000000;font-family:Arial;font-size:13px;">Updater Test</span>
-</div>
-</div>
-</div>
+<div id="intro" style="position:relative;text-align:center;width:100%;height:100%;float:left;display:block;z-index:1;">
+<div id="intro-overlay"></div>
+<div id="intro_Container" style="width:565px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+
 </div>
 </div>
 </body>

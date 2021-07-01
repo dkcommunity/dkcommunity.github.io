@@ -1,6 +1,6 @@
 body
 {
-   background-color: #FFFFFF;
+   background-color: #000000;
    color: #000000;
    font-family: Arial;
    font-weight: normal;
@@ -31,89 +31,16 @@ input:focus, textarea:focus, select:focus
 {
    outline: none;
 }
-#wb_VideoBackground
+#intro
 {
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
    background-color: transparent;
-   background-image: url('images/bg22.jpg');
+   background-image: url('images/main_548x404.jpg');
    background-repeat: repeat;
    background-position: center center;
    background-size: cover;
-   border: 0px solid #CCCCCC;
-   box-sizing: border-box;
    margin: 0;
-   margin-right: auto;
-   margin-left: auto;
-   max-width: 1024px;
 }
-#VideoBackground
-{
-   box-sizing: border-box;
-   padding: 100px 15px 100px 15px;
-   margin-right: auto;
-   margin-left: auto;
-}
-#VideoBackground > .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#VideoBackground > .row > .col-1, #VideoBackground > .row > .col-2
-{
-   box-sizing: border-box;
-   font-size: 0px;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#VideoBackground > .row > .col-1, #VideoBackground > .row > .col-2
-{
-   float: left;
-}
-#VideoBackground > .row > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 50%;
-   text-align: left;
-}
-#VideoBackground > .row > .col-2
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 50%;
-   text-align: left;
-}
-#VideoBackground:before,
-#VideoBackground:after,
-#VideoBackground .row:before,
-#VideoBackground .row:after
-{
-   display: table;
-   content: " ";
-}
-#VideoBackground:after,
-#VideoBackground .row:after
-{
-   clear: both;
-}
-@media (max-width: 480px)
-{
-#VideoBackground > .row > .col-1, #VideoBackground > .row > .col-2
-{
-   float: none;
-   width: 100%;
-}
-}
-#VideoBackground-overlay
+#intro-overlay
 {
    position: absolute;
    top: 0;
@@ -121,43 +48,12 @@ input:focus, textarea:focus, select:focus
    bottom: 0;
    left: 0;
    background-color: #000000;
-   opacity: 0.39;
+   opacity: 0.5;
 }
-#wb_Palms
+#wb_down-arrow
 {
-   margin: 0;
-   vertical-align: top;
-}
-#Palms
-{
-   border: 2px solid #FFFFFF;
-   box-sizing: border-box;
-   padding: 0;
-   display: block;
-   width: 100%;
-   height: auto;
-   max-width: 200px;
-   margin-left: auto;
-   margin-right: auto;
-   vertical-align: top;
-}
-#wb_Text1 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: left;
-}
-#wb_Text1 div
-{
-   text-align: left;
-}
-#wb_Text1
-{
-   display: block;
-   margin: 0;
-   box-sizing: border-box;
-   width: 100%;
+   top: auto !important; 
+   bottom: 25px !important;
+   left: 50% !important;
+   margin-left: -25px;
 }
